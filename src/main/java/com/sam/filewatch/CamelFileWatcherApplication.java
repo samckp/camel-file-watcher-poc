@@ -10,5 +10,4 @@ public class CamelFileWatcherApplication {
 
 		SpringApplication.run(CamelFileWatcherApplication.class, args);
 	}
-
 }
