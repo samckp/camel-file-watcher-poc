@@ -15,7 +15,6 @@ public class FileWatchRoute extends RouteBuilder {
          .log("File event: ${header.CamelFileEventType} occurred on file ${header.CamelFileName}" +
                 " at ${header.CamelFileLastModified}");
 
-
         from("{{watchTxtFile}}")
                 .routeId("watchTxtFileRoute")
           .log("File event: ${header.CamelFileEventType} occurred on file ${header.CamelFileName}" +
