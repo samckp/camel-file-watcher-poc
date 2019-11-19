@@ -8,4 +8,6 @@ Spring Boot with Apache Camel 3.0 File-Watcher Component.
 
 3. CREATE SNAPSHOT OF FILE WHEN MODIFIED.
 
-4. Datewise Sort list of files and Zip files and copy into Destination Path. 
+4. Datewise Sort list of files and Zip files and copy into Destination Path.
+
+5. Email sender introduced. 
