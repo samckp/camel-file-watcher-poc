@@ -24,7 +24,7 @@ public class FileZipRoute extends RouteBuilder {
                 .completionFromBatchConsumer()
                 .eagerCheckCompletion()
                 .setHeader(Exchange.FILE_NAME, simple("test-$simple{date:now:yyyy-MM-dd}.zip"))
-                .process(mailProcessor)
+                .process(mailProcessor)     // send email processor
                 .to("{{outputPath}}")
         ;
     }
