@@ -10,4 +10,4 @@ Spring Boot with Apache Camel 3.0 File-Watcher Component.
 
 4. Datewise Sort list of files and Zip files and copy into Destination Path.
 
-5. Email sender introduced. 
+5. Email sender introduced (MailProcessor), it will send zip file to given mailId.
