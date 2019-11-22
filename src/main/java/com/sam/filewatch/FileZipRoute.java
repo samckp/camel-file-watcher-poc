@@ -16,6 +16,8 @@ public class FileZipRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
+        onException(Exception.class).handled(true).log(LoggingLevel.ERROR, "${body}");
+
         from("{{snapshotPath}}")
                 .routeId("listFiles")
                 .log(LoggingLevel.INFO, "${header.CamelFileName}")
